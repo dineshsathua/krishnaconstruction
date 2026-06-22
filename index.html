@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Construction | Sustainable Infrastructure Specialists</title>
+    <meta name="description" content="Krishna Construction — Grade-A government contractors specialising in Drinking Water & Sanitation and Building Construction infrastructure.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } }</script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION (shared across all pages)
+═══════════════════════════════════════════════════════ -->
+<nav id="navbar">
+    <!-- Main Navigation Container -->
+    <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-3 md:py-4">
+
+            <!-- Logo (Banner Image) -->
+            <a href="index.html" class="flex-shrink-0 logo-link">
+                <img id="nav-banner-img" src="images/bannar.png" alt="Krishna Construction Logo">
+            </a>
+
+            <!-- Desktop links -->
+            <div class="hidden xl:flex items-center gap-8">
+                <a href="index.html"    class="nav-link" data-page="home">Home</a>
+                <a href="services.html" class="nav-link" data-page="services.html">Services</a>
+                <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+                <a href="about.html"    class="nav-link" data-page="about.html">About Us</a>
+                <a href="contact.html"  class="nav-link" data-page="contact.html">Contact</a>
+            </div>
+
+            <!-- Desktop CTA + hamburger -->
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="nav-cta hidden xl:inline-flex">
+                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                    Get a Quote
+                </a>
+                <button id="admin-btn" class="nav-cta hidden xl:inline-flex bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-cyan-400 gap-1.5 items-center text-xs py-2 px-3 rounded-xl transition-all">
+                    <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                    <span>Admin</span>
+                </button>
+                <button id="hamburger" class="xl:hidden flex flex-col gap-[5px] p-1.5" aria-label="Toggle menu">
+                    <span class="hb-bar"></span>
+                    <span class="hb-bar"></span>
+                    <span class="hb-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu">
+        <div class="max-w-7xl mx-auto px-5 pb-6 pt-2 flex flex-col">
+            <a href="index.html"    class="mobile-nav-link" data-page="home">Home</a>
+            <a href="services.html" class="mobile-nav-link" data-page="services.html">Services</a>
+            <a href="projects.html" class="mobile-nav-link" data-page="projects.html">Projects</a>
+            <a href="about.html"    class="mobile-nav-link" data-page="about.html">About Us</a>
+            <a href="contact.html"  class="mobile-nav-link" data-page="contact.html">Contact</a>
+            <a href="contact.html"  class="nav-cta mt-5 justify-center text-base py-3.5">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                Request a Quote / Tender Query
+            </a>
+            <button id="mobile-admin-btn" class="mobile-nav-link mt-2 text-left flex items-center gap-2 text-slate-400">
+                <i data-lucide="lock" class="w-4 h-4"></i>
+                <span>Admin Login</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════ -->
+<section id="home" class="hero-bg dot-grid">
+
+    <!-- Watermark text -->
+    <div class="hero-watermark select-none">KC</div>
+
+    <!-- Decorative rings -->
+    <div class="hero-ring anim-ring" style="width:640px;height:640px;right:-180px;top:50%;transform:translateY(-50%)"></div>
+    <div class="hero-ring anim-ring-2" style="width:440px;height:440px;right:-80px;top:50%;transform:translateY(-50%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-cyan-500/25 to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-36 lg:py-0 lg:min-h-screen flex items-center">
+        <div class="grid lg:grid-cols-2 gap-16 items-center w-full">
+
+            <!-- Left: Copy ─────────────────────────────────── -->
+            <div>
+                <!-- Status badge -->
+                <div class="chip chip-cyan-dk mb-6 reveal">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Grade-A Government Contractor
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-[3.7rem] font-black text-white leading-[1.09] tracking-tight mb-6 reveal d1">
+                    Building<br>
+                    <span class="grad-text">Sustainable</span><br>
+                    Infrastructure<br>
+                    <span class="font-extralight text-slate-400 text-4xl sm:text-5xl">for Tomorrow.</span>
+                </h1>
+
+                <p class="text-slate-300 text-lg leading-relaxed mb-2 max-w-xl reveal d2">
+                    Trusted specialists serving the
+                    <strong class="text-cyan-400 font-semibold">Drinking Water &amp; Sanitation Dept.</strong>
+                    and the
+                    <strong class="text-sky-400 font-semibold">Building Construction Dept.</strong>
+                </p>
+                <p class="text-slate-400 text-[0.9375rem] leading-relaxed mb-10 max-w-xl reveal d2">
+                    From high-capacity water supply schemes and filtration plants to large-scale government buildings — on schedule, on budget, to exacting quality standards.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-wrap gap-4 mb-14 reveal d3">
+                    <a href="projects.html" class="nav-cta text-sm py-3 px-6">
+                        <i data-lucide="folder-open" class="w-4 h-4"></i>
+                        View Our Projects
+                    </a>
+                    <a href="contact.html" class="inline-flex items-center gap-2 border border-slate-600 hover:border-cyan-400 text-slate-200 hover:text-cyan-400 font-semibold px-6 py-3 rounded-xl transition-all text-sm">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        Tender Query
+                    </a>
+                </div>
+
+                <!-- Quick stats row -->
+                <div class="flex flex-wrap gap-8 reveal d4">
+                    <div>
+                        <div class="text-3xl font-black text-white leading-none">15<span class="text-cyan-400">+</span></div>
+                        <div class="text-slate-400 text-xs mt-1 font-semibold uppercase tracking-widest">Years Exp.</div>
+                    </div>
+                    <div class="w-px self-stretch bg-slate-700/60"></div>
+                    <div>
+                        <div class="text-3xl font-black text-white leading-none">100<span class="text-cyan-400">+</span></div>
+                        <div class="text-slate-400 text-xs mt-1 font-semibold uppercase tracking-widest">Projects Done</div>
+                    </div>
+                    <div class="w-px self-stretch bg-slate-700/60"></div>
+                    <div>
+                        <div class="text-3xl font-black text-white leading-none">₹70<span class="text-cyan-400">Cr+</span></div>
+                        <div class="text-slate-400 text-xs mt-1 font-semibold uppercase tracking-widest">Work Executed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Dashboard card ─────────────────────── -->
+            <div class="hidden lg:block relative anim-float">
+
+                <!-- Main dashboard panel -->
+                <div class="hero-dashboard relative">
+                    <!-- Window chrome -->
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-400/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                            <span class="ml-3 text-slate-500 text-xs font-medium">Project Status — Live Dashboard</span>
+                        </div>
+                        <button id="edit-dashboard-btn" class="hidden text-cyan-400 hover:text-cyan-300 font-bold text-xs bg-slate-800/80 hover:bg-slate-800 border border-slate-700 px-3 py-1 rounded-md transition-all items-center gap-1">
+                            <i data-lucide="edit-3" class="w-3 h-3"></i> <span>Edit Projects</span>
+                        </button>
+                    </div>
+
+                    <!-- Project rows -->
+                    <div id="live-dashboard-projects" class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300 text-sm font-medium"><a href="projects.html">Rural Water Supply Scheme — 12 Village Cluster</a> </span>
+                                <span class="text-[11px] font-bold text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full">Completed</span>
+                            </div>
+                            <div class="h-2 bg-slate-700/60 rounded-full overflow-hidden">
+                                <div class="prog-bar bg-gradient-to-r from-cyan-500 to-blue-500" style="width:100%"></div>
+                            </div>
+                            <div class="flex justify-between mt-1.5 text-slate-500 text-xs">
+                                <span>100% Complete</span><span>₹ 9.5 Cr</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300 text-sm font-medium">Collectorate Building — G+3</span>
+                                <span class="text-[11px] font-bold text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded-full">In Progress</span>
+                            </div>
+                            <div class="h-2 bg-slate-700/60 rounded-full overflow-hidden">
+                                <div class="prog-bar bg-gradient-to-r from-blue-500 to-indigo-500" style="width:45%"></div>
+                            </div>
+                            <div class="flex justify-between mt-1.5 text-slate-500 text-xs">
+                                <span>45% Complete</span><span>₹ 7.8 Cr</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-slate-300 text-sm font-medium">Rural Pipeline Network — Zone C</span>
+                                <span class="text-[11px] font-bold text-slate-400 bg-slate-400/10 px-2 py-0.5 rounded-full">Completed</span>
+                            </div>
+                            <div class="h-2 bg-slate-700/60 rounded-full overflow-hidden">
+                                <div class="prog-bar bg-gradient-to-r from-emerald-500 to-teal-500" style="width:100%"></div>
+                            </div>
+                            <div class="flex justify-between mt-1.5 text-slate-500 text-xs">
+                                <span>100% Complete</span><span>₹ 3.1 Cr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3D Bubble Button to Jharkhand Tenders -->
+                    <div class="mt-6 pt-5 border-t border-slate-700/50 flex justify-center">
+                        <a href="https://jharkhandtenders.gov.in/nicgep/app" target="_blank" rel="noopener noreferrer" class="bubble-btn">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                            <span>Jharkhand Tenders Portal</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating badge: Grade-A -->
+                <div class="hero-badge" style="top:-18px;right:-20px;">
+                    <div class="text-white text-xs font-extrabold uppercase tracking-widest">ISO Certified</div>
+                    <div class="text-cyan-300 text-[11px] font-semibold">Grade-A Contractor</div>
+                </div>
+
+                <!-- Floating badge: on-time -->
+                <div class="hero-badge flex items-center gap-2.5" style="bottom:-18px;left:-20px;">
+                    <div class="w-8 h-8 rounded-lg bg-amber-400/15 flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+                    </div>
+                    <div>
+                        <div class="text-white text-xs font-bold">100% On-Time</div>
+                        <div class="text-slate-400 text-[10px]">Delivery Record</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom wave to white -->
+    <div class="absolute bottom-0 inset-x-0 pointer-events-none" style="line-height:0">
+        <svg viewBox="0 0 1440 72" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block">
+            <path d="M0 72L1440 72L1440 26C1100 62 840 2 720 34C600 66 300 4 0 26Z" fill="white"/>
+        </svg>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ANIMATED STATS STRIP
+═══════════════════════════════════════════════════════ -->
+<section class="stats-strip">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-stretch justify-center divide-x divide-slate-800">
+            <div class="stat-item flex-1 min-w-[140px]">
+                <div class="stat-value" data-count="15" data-suffix="+">15+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item flex-1 min-w-[140px]">
+                <div class="stat-value" data-count="100" data-suffix="+">100+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item flex-1 min-w-[140px]">
+                <div class="stat-value">₹70Cr+</div>
+                <div class="stat-label">Work Executed</div>
+            </div>
+            <div class="stat-item flex-1 min-w-[140px]">
+                <div class="stat-value" data-count="100" data-suffix="%">100%</div>
+                <div class="stat-label">On-Time Delivery</div>
+            </div>
+            <div class="stat-item flex-1 min-w-[140px]">
+                <div class="stat-value" data-count="7" data-suffix="+">7+</div>
+                <div class="stat-label">Gov. Departments</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     DEPARTMENTS WE SERVE
+═══════════════════════════════════════════════════════ -->
+<section class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-slate-400 text-[11px] font-bold tracking-[0.22em] uppercase mb-8 reveal">Government Departments We Serve</p>
+        <div class="flex flex-wrap justify-center gap-5 reveal d1">
+
+            <div class="dept-badge bg-cyan-50 border-cyan-200 hover:border-cyan-400">
+                <div class="w-11 h-11 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="droplets" class="w-5 h-5 text-cyan-600"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-slate-800 font-bold text-sm">Drinking Water &amp; Sanitation Dept.</div>
+                    <div class="text-slate-500 text-xs">DWSD — Government of India</div>
+                </div>
+            </div>
+
+            <div class="dept-badge bg-blue-50 border-blue-200 hover:border-blue-400">
+                <div class="w-11 h-11 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="building-2" class="w-5 h-5 text-blue-600"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-slate-800 font-bold text-sm">Building Construction Department</div>
+                    <div class="text-slate-500 text-xs">BCD — State Government</div>
+                </div>
+            </div>
+
+            <div class="dept-badge bg-amber-50 border-amber-200 hover:border-amber-400">
+                <div class="w-11 h-11 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="award" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div class="text-left">
+                    <div class="text-slate-800 font-bold text-sm">Grade-A Approved Contractor</div>
+                    <div class="text-slate-500 text-xs">Government Certified</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SERVICES PREVIEW
+═══════════════════════════════════════════════════════ -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14">
+            <div class="chip chip-cyan mb-5 reveal">
+                <i data-lucide="settings" class="w-3.5 h-3.5"></i> Core Expertise
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4 reveal d1">
+                Our Specialized <span class="text-cyan-600">Services</span>
+            </h2>
+            <p class="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed reveal d2">
+                End-to-end civil infrastructure solutions — engineered for performance, built to last, delivered for government.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 mb-10">
+
+            <!-- Service 1 -->
+            <div class="svc-preview-card service-card reveal-left">
+                <div class="bg-gradient-to-br from-cyan-600 via-cyan-700 to-blue-700 p-8 relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-white/5"></div>
+                    <div class="absolute -bottom-8 -left-8 w-28 h-28 rounded-full bg-white/5"></div>
+                    <div class="relative">
+                        <div class="w-14 h-14 bg-white/15 border border-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="droplets" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-1.5">Water Supply &amp;<br>Sanitation Infrastructure</h3>
+                        <p class="text-cyan-100/80 text-sm">Government-grade systems under DWSD for communities &amp; urban networks.</p>
+                    </div>
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <ul class="service-checklist space-y-3.5 flex-1">
+                        <li>
+                            <div class="check-dot bg-cyan-50 border border-cyan-100"><i data-lucide="check" class="w-3 h-3 text-cyan-600"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">High-Capacity Water Supply Schemes</span><br><span class="text-slate-500 text-xs">Rural &amp; urban drinking water under DWSD specifications</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-cyan-50 border border-cyan-100"><i data-lucide="check" class="w-3 h-3 text-cyan-600"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">DI / HDPE / MS Pipeline Networks</span><br><span class="text-slate-500 text-xs">Water distribution across village clusters and urban zones</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-cyan-50 border border-cyan-100"><i data-lucide="check" class="w-3 h-3 text-cyan-600"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Filtration &amp; Water Treatment Plants</span><br><span class="text-slate-500 text-xs">ESRs, GLSRs, chlorination units, and slow sand filters</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-cyan-50 border border-cyan-100"><i data-lucide="check" class="w-3 h-3 text-cyan-600"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Underground Drainage &amp; Sanitation</span><br><span class="text-slate-500 text-xs">UGD, house connections, STPs, and village ODF works</span></div>
+                        </li>
+                    </ul>
+                    <a href="services.html" class="mt-6 inline-flex items-center gap-2 text-cyan-600 font-bold text-sm hover:gap-3 transition-all group">
+                        Explore Water &amp; Sanitation Services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="svc-preview-card service-card reveal-right d1">
+                <div class="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 p-8 relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-44 h-44 rounded-full bg-white/5"></div>
+                    <div class="absolute -bottom-8 -left-8 w-28 h-28 rounded-full bg-white/5"></div>
+                    <div class="relative">
+                        <div class="w-14 h-14 bg-white/10 border border-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="building-2" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-1.5">Building &amp; Civil<br>Construction</h3>
+                        <p class="text-slate-300/80 text-sm">Structural excellence for government &amp; institutional projects under BCD.</p>
+                    </div>
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <ul class="service-checklist space-y-3.5 flex-1">
+                        <li>
+                            <div class="check-dot bg-slate-100 border border-slate-200"><i data-lucide="check" class="w-3 h-3 text-slate-700"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Government Administrative Buildings</span><br><span class="text-slate-500 text-xs">Offices, taluk complexes, community halls per BCD drawings</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-slate-100 border border-slate-200"><i data-lucide="check" class="w-3 h-3 text-slate-700"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Structural &amp; RCC Engineering</span><br><span class="text-slate-500 text-xs">Framing, retaining walls, bridges, and heavy civil works</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-slate-100 border border-slate-200"><i data-lucide="check" class="w-3 h-3 text-slate-700"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Schools, PHCs &amp; Healthcare Facilities</span><br><span class="text-slate-500 text-xs">Educational blocks, hospitals, and anganwadi centres</span></div>
+                        </li>
+                        <li>
+                            <div class="check-dot bg-slate-100 border border-slate-200"><i data-lucide="check" class="w-3 h-3 text-slate-700"></i></div>
+                            <div><span class="font-semibold text-slate-800 text-sm">Roads, Drains &amp; Site Development</span><br><span class="text-slate-500 text-xs">CC/BT roads, storm drains, compound walls, campus works</span></div>
+                        </li>
+                    </ul>
+                    <a href="services.html" class="mt-6 inline-flex items-center gap-2 text-slate-700 font-bold text-sm hover:gap-3 transition-all group">
+                        Explore Building &amp; Civil Services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center reveal">
+            <a href="services.html" class="inline-flex items-center gap-2 border border-slate-200 hover:border-cyan-400 text-slate-600 hover:text-cyan-600 font-semibold px-7 py-3 rounded-xl transition-all text-sm">
+                View All Services &amp; Capabilities <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HOW WE WORK — PROCESS STRIP
+═══════════════════════════════════════════════════════ -->
+<section class="process-strip dot-grid py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-12">
+            <div class="chip chip-cyan-dk mb-4 reveal"><i data-lucide="git-commit-horizontal" class="w-3.5 h-3.5"></i> Our Process</div>
+            <h2 class="text-3xl sm:text-4xl font-black text-white mb-3 reveal d1">How We Deliver <span class="grad-text">Projects</span></h2>
+            <p class="text-slate-400 text-base max-w-xl mx-auto reveal d2">A disciplined 4-phase approach ensuring compliance, quality, and on-time handover.</p>
+        </div>
+
+        <!-- Steps grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="reveal d1">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 h-full hover:bg-white/8 hover:border-cyan-500/25 transition-all">
+                    <div class="process-step-num mb-4">01</div>
+                    <h4 class="text-white font-bold text-base mb-2">Tender &amp; Planning</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Review BOQ, site conditions, and technical sanction. Submit compliant bids and secure work order.</p>
+                </div>
+            </div>
+
+            <div class="reveal d2">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 h-full hover:bg-white/8 hover:border-cyan-500/25 transition-all">
+                    <div class="process-step-num mb-4">02</div>
+                    <h4 class="text-white font-bold text-base mb-2">Site Assessment</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Conduct soil surveys, alignment drawings, material sourcing, and mobilise technical workforce.</p>
+                </div>
+            </div>
+
+            <div class="reveal d3">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 h-full hover:bg-white/8 hover:border-cyan-500/25 transition-all">
+                    <div class="process-step-num mb-4">03</div>
+                    <h4 class="text-white font-bold text-base mb-2">Construction &amp; QC</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Execute works phase-by-phase with third-party QC, lab testing, and real-time milestone tracking.</p>
+                </div>
+            </div>
+
+            <div class="reveal d4">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 h-full hover:bg-white/8 hover:border-cyan-500/25 transition-all">
+                    <div class="process-step-num mb-4">04</div>
+                    <h4 class="text-white font-bold text-base mb-2">Handover &amp; Docs</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Complete MB submissions, bill abstracts, quality certificates, and formal departmental handover.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     WHY CHOOSE US — TEASER
+═══════════════════════════════════════════════════════ -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left: Copy -->
+            <div class="reveal-left">
+                <div class="chip chip-slate mb-5"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Why Choose Us</div>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight mb-4">
+                    Built on <span class="text-cyan-600">Trust.</span><br>Delivered with <span class="text-blue-600">Precision.</span>
+                </h2>
+                <p class="text-slate-500 text-base leading-relaxed mb-8">
+                    Our reputation rests on consistent delivery, strict IS-code compliance, and a zero-deviation commitment to government quality standards. Every project is an endorsement we protect.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-cyan-50 border border-cyan-100 rounded-xl p-4 text-center">
+                        <div class="text-2xl font-black text-cyan-600">50+</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5 uppercase tracking-wide">Projects Done</div>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-4 text-center">
+                        <div class="text-2xl font-black text-blue-600">100%</div>
+                        <div class="text-xs text-slate-500 font-semibold mt-0.5 uppercase tracking-wide">On Schedule</div>
+                    </div>
+                </div>
+                <a href="about.html" class="inline-flex items-center gap-2 text-cyan-600 font-bold hover:gap-3 transition-all">
+                    Why Choose Krishna Construction <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Right: Cards -->
+            <div class="grid gap-4 reveal-right d1">
+                <div class="why-teaser-card">
+                    <div class="w-11 h-11 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="clock" class="w-5 h-5 text-cyan-600"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-900 mb-1">Timely Execution</div>
+                        <div class="text-slate-500 text-sm">Phased milestones, daily monitoring, and zero delays on all 50+ projects executed.</div>
+                    </div>
+                </div>
+                <div class="why-teaser-card">
+                    <div class="w-11 h-11 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-blue-600"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-900 mb-1">Strict Quality Compliance</div>
+                        <div class="text-slate-500 text-sm">IS codes, BIS specs, third-party QC audits, and lab testing at every stage.</div>
+                    </div>
+                </div>
+                <div class="why-teaser-card">
+                    <div class="w-11 h-11 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="award" class="w-5 h-5 text-amber-600"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-900 mb-1">Grade-A Approved</div>
+                        <div class="text-slate-500 text-sm">Full eligibility for high-value tenders. Complete TS, MB, and abstract compliance.</div>
+                    </div>
+                </div>
+                <div class="why-teaser-card">
+                    <div class="w-11 h-11 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="file-check" class="w-5 h-5 text-emerald-600"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-slate-900 mb-1">Transparent Documentation</div>
+                        <div class="text-slate-500 text-sm">Audit-ready bill abstracts, QC registers, and project records maintained at every phase.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA BANNER
+═══════════════════════════════════════════════════════ -->
+<section class="home-cta dot-grid py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div class="chip chip-cyan-dk mb-6 reveal"><i data-lucide="zap" class="w-3.5 h-3.5"></i> Get Started Today</div>
+        <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight mb-5 reveal d1">
+            Have a Project or<br><span class="grad-text">Tender Enquiry?</span>
+        </h2>
+        <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto reveal d2">
+            Reach out for scope discussions, bid queries, or partnership opportunities. We respond within 24 hours.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 reveal d3">
+            <a href="contact.html" class="nav-cta text-base py-3.5 px-8">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                Request a Quote
+            </a>
+            <a href="tel:+917011806975" class="inline-flex items-center gap-2 border border-slate-600 hover:border-cyan-400 text-slate-200 hover:text-cyan-400 font-semibold px-8 py-3.5 rounded-xl transition-all text-base">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                Call Us Now
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer class="bg-slate-950 border-t border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+            <a href="index.html" class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 22h18M5 22V9.5L12 4l7 5.5V22M9 22v-7h6v7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="logo-name">Krishna</div>
+                    <div class="logo-sub">Construction</div>
+                </div>
+            </a>
+            <p class="text-slate-500 text-sm leading-relaxed mb-4">Grade-A government contractor specialising in water infrastructure and building construction for DWSD &amp; BCD.</p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="bg-cyan-900/40 border border-cyan-800/50 text-cyan-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">DWSD</span>
+                <span class="bg-blue-900/40 border border-blue-800/50 text-blue-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">BCD</span>
+                <span class="bg-amber-900/30 border border-amber-800/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">Grade-A</span>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+            <div class="footer-col-title">Our Services</div>
+            <a href="services.html" class="footer-link">Water Supply Schemes</a>
+            <a href="services.html" class="footer-link">Pipeline Networks</a>
+            <a href="services.html" class="footer-link">Water Treatment Plants</a>
+            <a href="services.html" class="footer-link">Government Buildings</a>
+            <a href="services.html" class="footer-link">Structural Engineering</a>
+            <a href="services.html" class="footer-link">Road &amp; Site Works</a>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <div class="footer-col-title">Quick Links</div>
+            <a href="index.html"    class="footer-link">Home</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="about.html"    class="footer-link">About Us</a>
+            <a href="contact.html"  class="footer-link">Contact</a>
+            <a href="contact.html"  class="footer-link">Tender Query</a>
+            <a href="https://sso.godaddy.com/login?app=email&realm=pass" target="_blank" rel="noopener noreferrer" class="footer-link">Webmail</a>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <div class="footer-col-title">Contact Us</div>
+            <!-- ★ REPLACE with your address ★ -->
+            <address class="not-italic text-slate-500 text-sm leading-relaxed mb-3">
+                Krishna Construction,<br>
+                Anjani Nagar, Seraikella,<br>
+                Dist- Sraikella-Kharswan,<br>
+                Jharkhand — 833219
+            </address>
+            <!-- ★ REPLACE with your phone ★ -->
+            <a href="tel:+917011806975" class="footer-link flex items-center gap-2">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i> +91 70118 06975
+            </a>
+            <!-- ★ REPLACE with your email ★ -->
+            <a href="mailto:contact@thekrishnaconstruction.com" class="footer-link flex items-center gap-2 mt-1">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i> contact@thekrishnaconstruction.com
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p class="text-slate-600 text-xs">© 2025 Krishna Construction. All rights reserved.</p>
+            <p class="text-slate-600 text-xs">Grade-A Government Contractor · DWSD &amp; BCD Specialist</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/admin.js" defer></script>
+<script src="js/home.js"></script>
+</body>
+</html>

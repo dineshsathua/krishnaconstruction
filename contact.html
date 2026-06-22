@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Krishna Construction</title>
+    <meta name="description"
+        content="Contact Krishna Construction for tender queries, project quotes, or partnership enquiries. Grade-A government contractor.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }</script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <!-- Main Navigation Container -->
+        <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-3 md:py-4">
+
+                <!-- Logo (Banner Image) -->
+                <a href="index.html" class="flex-shrink-0 logo-link">
+                    <img id="nav-banner-img" src="images/bannar.png" alt="Krishna Construction Logo">
+                </a>
+
+                <div class="hidden xl:flex items-center gap-8">
+                    <a href="index.html" class="nav-link" data-page="home">Home</a>
+                    <a href="services.html" class="nav-link" data-page="services.html">Services</a>
+                    <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
+                    <a href="about.html" class="nav-link" data-page="about.html">About Us</a>
+                    <a href="contact.html" class="nav-link" data-page="contact.html">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="contact.html" class="nav-cta hidden xl:inline-flex"><i data-lucide="file-text"
+                            class="w-3.5 h-3.5"></i>Get a Quote</a>
+                    <button id="admin-btn" class="nav-cta hidden xl:inline-flex bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-cyan-400 gap-1.5 items-center text-xs py-2 px-3 rounded-xl transition-all">
+                        <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                        <span>Admin</span>
+                    </button>
+                    <button id="hamburger" class="xl:hidden flex flex-col gap-[5px] p-1.5"
+                        aria-label="Toggle menu"><span class="hb-bar"></span><span class="hb-bar"></span><span
+                            class="hb-bar"></span></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu">
+            <div class="max-w-7xl mx-auto px-5 pb-6 pt-2 flex flex-col">
+                <a href="index.html" class="mobile-nav-link" data-page="home">Home</a>
+                <a href="services.html" class="mobile-nav-link" data-page="services.html">Services</a>
+                <a href="projects.html" class="mobile-nav-link" data-page="projects.html">Projects</a>
+                <a href="about.html" class="mobile-nav-link" data-page="about.html">About Us</a>
+                <a href="contact.html" class="mobile-nav-link" data-page="contact.html">Contact</a>
+                <a href="contact.html" class="nav-cta mt-5 justify-center text-base py-3.5"><i data-lucide="file-text"
+                        class="w-4 h-4"></i>Request a Quote / Tender Query</a>
+                <button id="mobile-admin-btn" class="mobile-nav-link mt-2 text-left flex items-center gap-2 text-slate-400">
+                    <i data-lucide="lock" class="w-4 h-4"></i>
+                    <span>Admin Login</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ═══ INNER PAGE HERO ══════════════════════════════════ -->
+    <section class="inner-hero dot-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-slate-500 text-sm mb-6">
+                <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-600"></i>
+                <span class="text-slate-300">Contact</span>
+            </div>
+            <div class="chip chip-cyan-dk mb-5 reveal"><i data-lucide="mail" class="w-3.5 h-3.5"></i> Get In Touch</div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 reveal d1">
+                Start a Project or<br><span class="grad-text">Tender Query</span>
+            </h1>
+            <p class="text-slate-300 text-lg max-w-2xl leading-relaxed reveal d2">
+                Reach out for scope discussions, bid enquiries, or partnership opportunities. We respond within 24
+                hours.
+            </p>
+        </div>
+        <div class="inner-hero-wave">
+            <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                style="width:100%;display:block">
+                <path d="M0 60L1440 60L1440 20C1100 52 840 0 720 28C600 56 300 2 0 20Z" fill="white" />
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- ═══ CONTACT MAIN SECTION ════════════════════════════ -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-5 gap-12 xl:gap-16">
+
+                <!-- ── LEFT: Contact Details ──────────────────── -->
+                <div class="lg:col-span-2 space-y-8">
+
+                    <div>
+                        <h2 class="text-2xl font-black text-slate-900 mb-7">Contact Information</h2>
+
+                        <!-- ╔═════════════════════════════════════════╗
+                         ║  ADDRESS BLOCK — UPDATE YOUR DETAILS   ║
+                         ║  Search for "★ REPLACE" to find each  ║
+                         ║  placeholder and fill in your real     ║
+                         ║  business information.                  ║
+                         ╚═════════════════════════════════════════╝ -->
+
+                        <!-- Registered Office -->
+                        <div class="flex items-start gap-4 mb-7">
+                            <div
+                                class="w-11 h-11 bg-cyan-50 border border-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-slate-800 font-bold text-sm mb-1.5">Registered Office</div>
+                                <!-- ★ REPLACE: Update with your full business address ★ -->
+                                <address class="not-italic text-slate-500 text-sm leading-relaxed">
+                                    Krishna Construction,<br>
+                                    Anjani Nagar, Seraikella,<br>
+                                    Dist- Sraikella-Kharswan,<br>
+                                    Jharkhand — 833219
+                                </address>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4 mb-7">
+                            <div
+                                class="w-11 h-11 bg-cyan-50 border border-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-5 h-5 text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-slate-800 font-bold text-sm mb-1.5">Phone / WhatsApp</div>
+                                <!-- ★ REPLACE: Update phone numbers ★ -->
+                                <a href="tel:+917011806975"
+                                    class="text-slate-500 hover:text-cyan-600 text-sm transition-colors block">+91 70118 06975 (Primary)</a>
+                                <a href="tel:+918538904609"
+                                    class="text-slate-500 hover:text-cyan-600 text-sm transition-colors block mt-0.5">+91 85389 04609 (Alternate)</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start gap-4 mb-7">
+                            <div
+                                class="w-11 h-11 bg-cyan-50 border border-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-5 h-5 text-cyan-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-slate-800 font-bold text-sm mb-1.5">Email Address</div>
+                                <!-- ★ REPLACE: Update email addresses ★ -->
+                                <a href="mailto:contact@thekrishnaconstruction.com"
+                                    class="text-slate-500 hover:text-cyan-600 text-sm transition-colors block">contact@thekrishnaconstruction.com</a>
+                                <a href="mailto:dinesh@thekrishnaconstruction.com"
+                                    class="text-slate-500 hover:text-cyan-600 text-sm transition-colors block mt-0.5">dinesh@thekrishnaconstruction.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Registration Details -->
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-11 h-11 bg-amber-50 border border-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="badge-check" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-slate-800 font-bold text-sm mb-1.5">Registration Details</div>
+                                <!-- ★ REPLACE: Update registration numbers ★ -->
+                                <div class="text-slate-500 text-sm space-y-0.5">
+                                    <div>GST No.: <span class="text-slate-700 font-medium">20CDHPS9344D1ZL</span>
+                                    </div>
+                                    <div>Contractor Reg.: <span class="text-slate-700 font-medium">CLASS 1</span></div>
+                                    <div>PAN No.: <span class="text-slate-700 font-medium">CDHPS9344D</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ╔═════════════════════════════════════════╗
+                         ║       END OF ADDRESS BLOCK              ║
+                         ╚═════════════════════════════════════════╝ -->
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i data-lucide="clock" class="w-4 h-4 text-slate-500"></i>
+                            <span class="text-slate-800 font-bold text-sm">Business Hours</span>
+                        </div>
+                        <div class="space-y-2.5 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">Monday – Saturday</span>
+                                <span class="text-slate-800 font-semibold">9:00 AM – 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">Sunday</span>
+                                <span class="text-slate-400">By Appointment Only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="bg-cyan-50 border border-cyan-100 rounded-xl p-5">
+                        <div class="text-slate-800 font-bold text-sm mb-3">Before you reach out</div>
+                        <div class="space-y-2">
+                            <a href="services.html"
+                                class="flex items-center gap-2 text-cyan-700 text-sm font-medium hover:text-cyan-800 transition-colors">
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i> Browse our Services
+                            </a>
+                            <a href="projects.html"
+                                class="flex items-center gap-2 text-cyan-700 text-sm font-medium hover:text-cyan-800 transition-colors">
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i> View completed Projects
+                            </a>
+                            <a href="about.html"
+                                class="flex items-center gap-2 text-cyan-700 text-sm font-medium hover:text-cyan-800 transition-colors">
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i> Learn why clients choose us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── RIGHT: Contact Form ──────────────────────── -->
+                <div class="lg:col-span-3">
+                    <div class="bg-slate-900 border border-slate-700/60 rounded-2xl p-7 sm:p-9">
+                        <h3 class="text-white font-bold text-xl mb-1.5">Send Us a Message</h3>
+                        <p class="text-slate-400 text-sm mb-7">Fill in the form and our team will be in touch within 24
+                            hours.</p>
+
+                        <form id="contact-form" novalidate class="space-y-5">
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Full
+                                        Name *</label>
+                                    <input type="text" name="name" required placeholder="Your full name"
+                                        class="form-field">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Phone
+                                        / WhatsApp *</label>
+                                    <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX"
+                                        class="form-field">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Email
+                                    Address</label>
+                                <input type="email" name="email" placeholder="your@email.com" class="form-field">
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label
+                                        class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Query
+                                        Type *</label>
+                                    <select name="query_type" required class="form-field cursor-pointer">
+                                        <option value="" disabled selected>Select query type…</option>
+                                        <option value="tender">Tender Enquiry</option>
+                                        <option value="quote">Request a Quote</option>
+                                        <option value="project">New Project Discussion</option>
+                                        <option value="partnership">Subcontractor / Partnership</option>
+                                        <option value="other">General Enquiry</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Department</label>
+                                    <select name="department" class="form-field cursor-pointer">
+                                        <option value="" disabled selected>Select department…</option>
+                                        <option value="DWSD">Drinking Water &amp; Sanitation (DWSD)</option>
+                                        <option value="BCD">Building Construction (BCD)</option>
+                                        <option value="other">Other / Not Applicable</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Estimated
+                                    Project Value</label>
+                                <select name="project_value" class="form-field cursor-pointer">
+                                    <option value="" disabled selected>Select approximate value…</option>
+                                    <option value="below50L">Below ₹ 50 Lakh</option>
+                                    <option value="50L-1Cr">₹ 50 Lakh – ₹ 1 Crore</option>
+                                    <option value="1Cr-5Cr">₹ 1 Crore – ₹ 5 Crore</option>
+                                    <option value="5Cr-10Cr">₹ 5 Crore – ₹ 10 Crore</option>
+                                    <option value="above10Cr">Above ₹ 10 Crore</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label
+                                    class="block text-slate-400 text-[10px] font-bold tracking-[0.16em] uppercase mb-2">Project
+                                    / Message Details *</label>
+                                <textarea name="message" required rows="4"
+                                    placeholder="Briefly describe your project — scope, location, timeline, and any specific requirements…"
+                                    class="form-field"></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="consent" required
+                                    class="mt-0.5 w-4 h-4 rounded accent-cyan-500 cursor-pointer flex-shrink-0">
+                                <label for="consent" class="text-slate-400 text-xs leading-relaxed cursor-pointer">
+                                    I consent to Krishna Construction contacting me regarding this enquiry. Your
+                                    information is kept strictly confidential and will not be shared with third parties.
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" id="submit-btn"
+                                class="w-full flex items-center justify-center gap-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-cyan-500/25 transition-all text-sm group">
+                                <span id="btn-text">Send Message</span>
+                                <i data-lucide="send" id="btn-icon"
+                                    class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
+                            </button>
+
+                            <!-- Success box -->
+                            <div id="form-success"
+                                class="hidden items-center justify-center gap-2.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-xl py-4 text-sm font-semibold">
+                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                <span>Thank you! We'll get back to you within 24 hours.</span>
+                            </div>
+
+                            <!-- Error box -->
+                            <div id="form-error"
+                                class="hidden items-center justify-center gap-2.5 bg-red-500/10 border border-red-500/30 text-red-400 rounded-xl py-4 text-sm font-semibold">
+                                <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                                <span>Something went wrong. Please try again or call us directly.</span>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ MAP PLACEHOLDER ══════════════════════════════════ -->
+    <!-- ★ REPLACE: Drop an actual Google Maps embed <iframe> here ★ -->
+    <section class="bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-3 text-center">Our Location</p>
+        </div>
+        <!-- Google Maps iframe embed for 22.70640069566619, 85.93613429196444 -->
+        <iframe 
+            class="w-full h-96 border-0 block" 
+            src="https://maps.google.com/maps?q=22.70640069566619,85.93613429196444&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="lg:col-span-1"><a href="index.html" class="flex items-center gap-3 mb-4">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 22h18M5 22V9.5L12 4l7 5.5V22M9 22v-7h6v7" stroke="white" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                    <div>
+                        <div class="logo-name">Krishna</div>
+                        <div class="logo-sub">Construction</div>
+                    </div>
+                </a>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">Grade-A government contractor specialising in
+                    water infrastructure and building construction for DWSD &amp; BCD.</p>
+                <div class="flex gap-2 flex-wrap"><span
+                        class="bg-cyan-900/40 border border-cyan-800/50 text-cyan-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">DWSD</span><span
+                        class="bg-blue-900/40 border border-blue-800/50 text-blue-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">BCD</span><span
+                        class="bg-amber-900/30 border border-amber-800/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">Grade-A</span>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Our Services</div><a href="services.html" class="footer-link">Water Supply
+                    Schemes</a><a href="services.html" class="footer-link">Pipeline Networks</a><a href="services.html"
+                    class="footer-link">Water Treatment Plants</a><a href="services.html" class="footer-link">Government
+                    Buildings</a><a href="services.html" class="footer-link">Structural Engineering</a><a
+                    href="services.html" class="footer-link">Road &amp; Site Works</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Quick Links</div><a href="index.html" class="footer-link">Home</a><a
+                    href="services.html" class="footer-link">Services</a><a href="projects.html"
+                    class="footer-link">Projects</a><a href="about.html" class="footer-link">About Us</a><a
+                    href="contact.html" class="footer-link">Contact</a><a href="contact.html" class="footer-link">Tender
+                    Query</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Contact Us</div>
+                <address class="not-italic text-slate-500 text-sm leading-relaxed mb-3">Krishna Construction,<br>
+                    Anjani Nagar, Seraikella,<br>
+                    Dist- Sraikella-Kharswan,<br>
+                    Jharkhand — 833219</address><a href="tel:+917011806975"
+                    class="footer-link flex items-center gap-2"><i data-lucide="phone" class="w-3.5 h-3.5"></i> +91 70118 06975</a><a href="mailto:contact@thekrishnaconstruction.com"
+                    class="footer-link flex items-center gap-2 mt-1"><i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                    contact@thekrishnaconstruction.com</a>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p class="text-slate-600 text-xs">© 2025 Krishna Construction. All rights reserved.</p>
+                <p class="text-slate-600 text-xs">Grade-A Government Contractor · DWSD &amp; BCD Specialist</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="js/main.js"></script>
+     <script src="js/admin.js" defer></script>
+     <script src="js/contact.js"></script>
+</body>
+
+</html>
